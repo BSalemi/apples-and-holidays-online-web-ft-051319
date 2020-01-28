@@ -40,3 +40,8 @@ def add_new_holiday_with_supplies(holiday_supplies, season, holiday, supply)
   fall_holidays = holiday_supplies[season]
   fall_holidays[holiday] = supply
 end
+
+def all_winter_holiday_supplies(holiday_supplies)
+  winter_holidays = holiday_supplies[:winter]
+  winter_holidays.values.flatten
+end 
