@@ -61,7 +61,7 @@ def all_holidays_with_bbq(holiday_supplies)
     holidays.each do |holiday, supplies|
       if holiday[supplies].include?("BBQ")
         bbq_holidays << holiday
-      end 
-    end 
+      end
+    end
     bbq_holidays
 end
