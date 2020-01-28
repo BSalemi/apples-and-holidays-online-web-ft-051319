@@ -46,14 +46,12 @@ def all_winter_holiday_supplies(holiday_supplies)
   winter_holidays.values.flatten
 end
 
-def all_supplies_in_holidays(holiday_supplies)
-  holiday_supplies.map do |season, holidays|
-    season.to_s.capitalize! + ":"
-    holidays.map do |holiday, supplies|
-      holiday.to_s.capitalize! + ":"
-      supplies.map do |supply|
-        supply.capitalize!
-      end.join("")
+def all_supplies_in_holidays(supplies_hash)
+  holiday_supplies.each do |season, holidays|
+    puts "#{season.capitalize}:"
+    holidays.each do |holiday, supplies|
+      puts"  #{holiday.to_s.split('_').map {|w| w.capitalize }.join(' ') }: #{supplies.join(", ")}"
     end
   end
+end
 end
