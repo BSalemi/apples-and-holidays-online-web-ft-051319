@@ -16,9 +16,13 @@ require 'pry'
 #   }
 # }
 
-def second_supply_for_fourth_of_july(hash)
+def second_supply_for_fourth_of_july(holiday_supplies)
   holiday_supplies[:summer][:fourth_of_july][1]
 end
 
-def add_supply_to_winter_holidays
+def add_supply_to_winter_holidays(holiday_supplies, supply)
+  winter_holidays = holiday_supples[:winter]
+  winter_holidays.each do |holiday, supplies|
+    holiday << supply
+  end 
 end
