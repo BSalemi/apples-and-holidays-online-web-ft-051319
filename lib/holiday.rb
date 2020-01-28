@@ -31,7 +31,7 @@ def add_supply_to_memorial_day(holiday_supplies, supply)
   spring_holiday = holiday_supplies[:spring]
   spring_holiday.each do |holiday, supplies|
     if holiday === "Memorial Day"
-      supplies << supply 
-    end 
-  end 
+      supplies << supply
+    end
+  end
 end
