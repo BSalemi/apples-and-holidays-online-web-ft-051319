@@ -63,5 +63,6 @@ def all_holidays_with_bbq(holiday_supplies)
         bbq_holidays << holiday
       end
     end
+    end
     bbq_holidays
 end
