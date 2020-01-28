@@ -51,7 +51,7 @@ def all_supplies_in_holidays(holiday_supplies)
     season.to_s.capitalize! + ":"
     holidays.map do |holiday, supplies|
       holiday.to_s.capitalize! + ":"
-      supplies.capitalize!.join("")
+      supplies.to_s.capitalize!.join("")
     end
   end
 end
