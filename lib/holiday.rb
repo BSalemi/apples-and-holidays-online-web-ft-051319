@@ -23,7 +23,6 @@ end
 def add_supply_to_winter_holidays(holiday_supplies, supply)
   winter_holidays = holiday_supplies[:winter]
   winter_holidays.each do |holiday, supplies|
-    binding.pry
     supplies << `#{supply}`
   end
 end
