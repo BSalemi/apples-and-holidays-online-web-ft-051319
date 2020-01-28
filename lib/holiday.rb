@@ -35,3 +35,8 @@ def add_supply_to_memorial_day(holiday_supplies, supply)
     end
   end
 end
+
+def add_new_holiday_with_supplies(holiday_supplies, holiday, supply)
+  fall_holidays = holiday_supplies[:fall]
+  fall_holidays[:halloween] = ["Candy"]
+end 
