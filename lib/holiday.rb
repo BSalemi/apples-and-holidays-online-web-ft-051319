@@ -24,5 +24,5 @@ def add_supply_to_winter_holidays(holiday_supplies, supply)
   winter_holidays = holiday_supples[:winter]
   winter_holidays.each do |holiday, supplies|
     holiday << supply
-  end 
+  end
 end
