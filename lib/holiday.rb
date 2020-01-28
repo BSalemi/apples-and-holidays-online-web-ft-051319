@@ -44,4 +44,4 @@ end
 def all_winter_holiday_supplies(holiday_supplies)
   winter_holidays = holiday_supplies[:winter]
   winter_holidays.values.flatten
-end 
+end
